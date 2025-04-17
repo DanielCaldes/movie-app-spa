@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/NOMBRE_DEL_REPO/',
+  base: '/movie-app-spa/',
   plugins: [react()],
 })
