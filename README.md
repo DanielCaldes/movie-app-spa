@@ -36,6 +36,12 @@ Puedes probar la aplicación desplegada en Github Pages aquí:
    ```bash
    npm run dev
    ```
+
+### Ejecutar tests
+```bash
+    npm vitest run
+```
+
 ### Generar archivos de producción y desplegar a Github Pages
 1. Generar los archivos de producción:
     ```bash
@@ -58,10 +64,15 @@ Puedes probar la aplicación desplegada en Github Pages aquí:
 ├── 📁 assets/                    // Imágenes y recursos
 ├── 📁 components/
 │   ├── 📄 Footer.jsx             // Pie de página de la aplicación
+│   ├── 📄 Footer.test.jsx        // Tests para footer
 │   ├── 📄 Header.jsx             // Encabezado con navegación hacia búsqueda y la página principal
+│   ├── 📄 Header.test.jsx        // Tests para header
 │   ├── 📄 MovieCard.jsx          // Tarjeta de presentación de una película
+│   ├── 📄 MovieCard.test.jsx     // Tests para movie card
 │   ├── 📄 MovieList.jsx          // Componente para mostrar una lista de películas
-│   └── 📄 SearchBar.jsx          // Barra de búsqueda para encontrar películas
+│   ├── 📄 MovieList.test.jsx     // Tests para movie list
+│   ├── 📄 SearchBar.jsx          // Barra de búsqueda para encontrar películas
+│   └── 📄 SearchBar.test.jsx     // Tests para search bar
 ├── 📁 pages/
 │   ├── 📄 Home.jsx               // Página de inicio
 │   ├── 📄 MovieDetail.jsx        // Página de detalles de una película específica
@@ -70,6 +81,7 @@ Puedes probar la aplicación desplegada en Github Pages aquí:
 ├── 📄 App.jsx                    // Componente principal con las rutas
 ├── 📄 index.css                  // Estilos globales
 ├── 📄 main.jsx                   // Archivo de entrada para renderizar la aplicación
+├── 📄 setupTests.jsx             // Archivo de configuración global de pruebas
 📄 .env                           // Archivo de configuración local con API_KEY
 📄 .env.example                   // Archivo de ejemplo para configuración del entorno local
 📄 404.html                       // Página de enrutamiento de nuevo a index si se recarga la página
