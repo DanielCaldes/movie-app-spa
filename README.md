@@ -36,7 +36,7 @@ Puedes probar la aplicación desplegada en Github Pages aquí:
    ```bash
    npm run dev
    ```
-### Guía de ayuda para generar y desplegar a Github Pages
+### Generar y desplegar a Github Pages
 1. Generar los archivos de producción:
     ```bash
     npm run build
