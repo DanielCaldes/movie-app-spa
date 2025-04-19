@@ -3,8 +3,6 @@ import axios from 'axios';
 import { Link, useSearchParams, useNavigate } from 'react-router-dom';
 import SearchBar from '../components/SearchBar';
 import MovieList from '../components/MovieList';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 export default function Search() {
   const [searchParams] = useSearchParams();
@@ -40,13 +38,11 @@ export default function Search() {
 
   return (
     <div>
-      <Header/>
       <main>
         <h1>Search Films</h1>
         <SearchBar query={query} setQuery={setQuery} onSearch={handleSearch} />
         <MovieList movies={results} />
       </main>
-      <Footer/>
     </div>
   );
 }
