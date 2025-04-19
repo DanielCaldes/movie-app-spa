@@ -6,7 +6,7 @@ export default function MovieCard({ movie }) {
         <img
         src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`}
         alt={movie.title}
-        onError={(e) => e.target.src = fallbackImage}  // Si falla la carga de la imagen, se carga la imagen de respaldo
+        onError={(e) => e.target.src = fallbackImage}
       />
         <h3>{movie.title}</h3>
       </div>

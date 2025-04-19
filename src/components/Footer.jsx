@@ -64,7 +64,7 @@ const styles = {
     alignItems: 'center',
   },
   icon: {
-    marginRight: '8px', // Espacio entre el icono y el texto
-    fontSize: '1.5rem', // Tamaño del icono
+    marginRight: '8px',
+    fontSize: '1.5rem',
   },
 };
