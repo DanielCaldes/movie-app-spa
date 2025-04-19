@@ -36,7 +36,20 @@ Puedes probar la aplicación desplegada en Github Pages aquí:
    ```bash
    npm run dev
    ```
-Importante: Si se quiere desplegar será necesario copiar manualmente la página 404.html en la carpeta dist
+### Guía de ayuda para generar y desplegar a Github Pages
+1. Generar los archivos de producción:
+    ```bash
+    npm run build
+    ```
+2. Copiar el archivo 404.html a la carpeta de build "dist"
+    ```bash
+    cp 404.html dist
+    ```
+    Esto permitirá realizar un enrutamiento a la página principal si se recarga alguna de las páginas.
+3. Desplegar la aplicación a Github Pages
+    ```bash
+    npm run deploy
+    ```
 
 ## Estructura del proyecto
 ```bash
